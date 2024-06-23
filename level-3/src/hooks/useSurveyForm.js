@@ -56,7 +56,7 @@ const useSurveyForm = () => {
 
   const fetchAdditionalQuestions = async (topic) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/survey/questions/${topic}`, {
+      const response = await fetch(`https://react-forms-backend.onrender.com/api/survey/questions/${topic}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

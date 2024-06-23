@@ -66,7 +66,7 @@ const useValidation = () => {
       errors.feedback = 'Feedback must be at least 50 characters';
     }
 
-    const isValid = Object.keys(errors).length === 0;
+    const isValid = Object.values(errors).every(error => error === null);
     return { isValid, errors};
   };
 
